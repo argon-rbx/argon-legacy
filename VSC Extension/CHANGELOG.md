@@ -2,7 +2,7 @@
 
 ## 1.3.0
 * Updated C++ codebase to work with Electron 25.8.0 (fixes annoying popup for Windows users and brings back debugging capabilities)
-* Merged changes by [@Oetzi_CS](https://github.com/OetziCS) in [#13](https://github.com/DervexHero/Argon/pull/13) (fixes errors when porting place from VSC to Roblox)
+* Merged changes by [@Oetzi_CS](https://github.com/OetziCS) in [#13](https://github.com/argon-rbx/argon-legacy/pull/13) (fixes errors when porting place from VSC to Roblox)
 * Improved Roblox-specific type casting
 
 ## 1.2.5
@@ -75,14 +75,14 @@
 * Updated wiki
 
 ## 0.6.5
-* Finished Argon [wiki](https://github.com/DervexHero/Argon/wiki)
+* Finished Argon [wiki](https://github.com/argon-rbx/argon-legacy/wiki)
 * Updated plugin window behavior when playtesting and closing
 * Updated markdowns
 
 ## 0.6.4
 * Added connection status to Roblox plugin icon, suggested by [@ecndm70](https://devforum.roblox.com/u/ecndm70)
 * Added option to automatically switch to Studio when using execute snippet command
-* Added Argon [wiki](https://github.com/DervexHero/Argon/wiki) on GitHub (work in progress)
+* Added Argon [wiki](https://github.com/argon-rbx/argon-legacy/wiki) on GitHub (work in progress)
 * Improved script with children detection, thanks to [@AridTheDev](https://devforum.roblox.com/u/aridthedev)
 * Improved status bar icon
 
@@ -112,7 +112,7 @@
 * Added compatibility mode which replaces ".source" files with "init" and .properties files with "init.meta"
 * Instance classes are now stored in .properties.json only when property syncing option is enabled
 * Replaced .argon.json with default.project.json (required to for Roblox LSP and other tooling)
-* Removed update classes command and auto update option - no real use cases (still available in [jsonGenerator.js](https://github.com/DervexHero/Argon/blob/main/VSC%20Extension/src/utils/jsonGenerator.js))
+* Removed update classes command and auto update option - no real use cases (still available in [jsonGenerator.js](https://github.com/argon-rbx/argon-legacy/blob/main/VSC%20Extension/src/utils/jsonGenerator.js))
 * Auto Studio launch now checks if Roblox is already running
 * Argon now utilizes new Roblox [ScriptEditorService](https://create.roblox.com/docs/reference/engine/classes/ScriptEditorService) API
 * Modified existing extension options (auto setup)
@@ -120,7 +120,7 @@
 * Redesigned quick pick menu
 
 ## 0.5.3
-* Fixed bug reported by [@Loomiquu](https://github.com/Loomiquu) in [#6](https://github.com/DervexHero/Argon/issues/6)
+* Fixed bug reported by [@Loomiquu](https://github.com/Loomiquu) in [#6](https://github.com/argon-rbx/argon-legacy/issues/6)
 
 ## 0.5.2
 * Fixed bug reported by [@0MRob](https://devforum.roblox.com/u/0mrob) that blocked script source from being ported when script had non-script children
@@ -155,7 +155,7 @@
 
 ## 0.4.3
 * Added new Argon menu (old commands won't work anymore!)
-* Added [JSON Schema](https://github.com/DervexHero/Argon/blob/main/VSC%20Extension/config/.argon.schema.json) file to make editing ".argon.json" easier
+* Added [JSON Schema](https://github.com/argon-rbx/argon-legacy/blob/main/VSC%20Extension/config/.argon.schema.json) file to make editing ".argon.json" easier
 * Fixed instances with special characters in their names not syncing from VSC to Roblox
 * Fixed Roblox Studio updating every time you use launch Roblox Studio command
 * Fixed open in editor option not working after leaving settings
@@ -254,7 +254,7 @@
 * Fixed duplicated instances bug
 
 ## 0.0.9
-* Merged changes by [@Almost89](https://github.com/Almost89) in [#1](https://github.com/DervexHero/Argon/pull/1)
+* Merged changes by [@Almost89](https://github.com/Almost89) in [#1](https://github.com/argon-rbx/argon-legacy/pull/1)
 * Fixed issue reported by [@LawMixer](https://devforum.roblox.com/u/bulldo344), [@commitblue](https://devforum.roblox.com/u/commitblue), [@Voidage](https://devforum.roblox.com/u/voidage) which made users unable to port large places
 * Added support for renamed services
 * Added history service support

@@ -1,5 +1,5 @@
 <div align='center'>
-  <img alt='Argon Logo' src='https://raw.githubusercontent.com/DervexHero/Argon/main/VSC%20Extension/assets/LogoName.png'>
+  <img alt='Argon Logo' src='https://raw.githubusercontent.com/argon-rbx/argon-legacy/main/VSC%20Extension/assets/LogoName.png'>
 </div>
 
 <div align='center'>
@@ -37,22 +37,22 @@ Argon is a simple two-way sync plugin for Roblox and extension for Visual Studio
 * Fast setup
 
 # Wiki
-## [Home](https://github.com/DervexHero/Argon/wiki)
+## [Home](https://github.com/argon-rbx/argon-legacy/wiki)
 
 * **Getting Started**
-  * [Installation](https://github.com/DervexHero/Argon/wiki/Installation)
-  * [Roblox plugin explained](https://github.com/DervexHero/Argon/wiki/Roblox-Plugin-Explained)
-  * [VSC extension explained](https://github.com/DervexHero/Argon/wiki/VSC-Extension-Explained)
-  * [Setting up the project](https://github.com/DervexHero/Argon/wiki/Setting-Up-The-Project)
+  * [Installation](https://github.com/argon-rbx/argon-legacy/wiki/Installation)
+  * [Roblox plugin explained](https://github.com/argon-rbx/argon-legacy/wiki/Roblox-Plugin-Explained)
+  * [VSC extension explained](https://github.com/argon-rbx/argon-legacy/wiki/VSC-Extension-Explained)
+  * [Setting up the project](https://github.com/argon-rbx/argon-legacy/wiki/Setting-Up-The-Project)
 
 * **Usage**
-  * [Managing instances](https://github.com/DervexHero/Argon/wiki/Managing-Instances)
-  * [Syncing code](https://github.com/DervexHero/Argon/wiki/Syncing-Code)
-  * [Porting projects](https://github.com/DervexHero/Argon/wiki/Porting-Projects)
-  * [Filtering options](https://github.com/DervexHero/Argon/wiki/Filtering-Options)
+  * [Managing instances](https://github.com/argon-rbx/argon-legacy/wiki/Managing-Instances)
+  * [Syncing code](https://github.com/argon-rbx/argon-legacy/wiki/Syncing-Code)
+  * [Porting projects](https://github.com/argon-rbx/argon-legacy/wiki/Porting-Projects)
+  * [Filtering options](https://github.com/argon-rbx/argon-legacy/wiki/Filtering-Options)
 
 # Demo
-[![Demo Video](https://raw.githubusercontent.com/DervexHero/Argon/main/VSC%20Extension/assets/Demo.png)](https://youtu.be/yvnleYgYaO0)
+[![Demo Video](https://raw.githubusercontent.com/argon-rbx/argon-legacy/main/VSC%20Extension/assets/Demo.png)](https://youtu.be/yvnleYgYaO0)
 
 # Changelog
-### All changes are documented in this [CHANGELOG.md](https://github.com/DervexHero/Argon/blob/main/VSC%20Extension/CHANGELOG.md) file
+### All changes are documented in this [CHANGELOG.md](https://github.com/argon-rbx/argon-legacy/blob/main/VSC%20Extension/CHANGELOG.md) file
