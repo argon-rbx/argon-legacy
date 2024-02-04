@@ -13,5 +13,5 @@ module.exports = {
     noRootFolder: 'Root folder cannot be found!',
     robloxStudioLaunch: 'Could not launch Roblox Studio!',
     unsupportedOS: 'This feature is not support on your OS!',
-    unsupportedVersion: 'You are using unsupported VSC version, some of the features may not work!'
+    unsupportedVersion: 'Argon was not compiled for the version of Electron used in this version of Visual Studio Code. Window management features will not work!'
 }

@@ -10,9 +10,21 @@ function getVersion() {
             return require('./winuser-110')
         case '116':
             return require('./winuser-116')
+        case '118':
+            return require('./winuser-118')
         default:
-            messageHandler.show('unsupportedVersion', 2)
-            return null
+            return {
+                "showVSC": () => {
+                    messageHandler.show('unsupportedVersion', 2)
+                },
+                "showStudio": () => {
+                    messageHandler.show('unsupportedVersion', 2)
+                },
+                "isStudioRunning" : () => {
+                    return false
+                },
+                "resetWindow": () => {}
+            }
         }
 }
 

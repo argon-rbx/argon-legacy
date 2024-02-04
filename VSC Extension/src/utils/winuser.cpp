@@ -5,12 +5,12 @@
 HWND vscWindow;
 HWND studioWindow;
 
-bool isVSC(char* title, std::string window)
+bool isVSC(char *title, std::string window)
 {
     return std::string(title).find(window + " - Visual Studio Code") != std::string::npos;
 }
 
-bool isStudio(char* title)
+bool isStudio(char *title)
 {
     return std::string(title).find("Roblox Studio") != std::string::npos;
 }
@@ -27,13 +27,13 @@ HWND getWindow(std::string window)
         if (length == 0)
             continue;
 
-        char* title = new char[length + 1];
+        char *title = new char[length + 1];
 
         GetWindowText(hwnd, title, length + 1);
 
         if (std::string(title) == "Program Manager")
         {
-            delete [] title;
+            delete[] title;
             continue;
         }
 
@@ -41,34 +41,35 @@ HWND getWindow(std::string window)
         {
             if (isVSC(title, window))
             {
-                delete [] title;
+                delete[] title;
                 return hwnd;
             }
         }
         else
         {
-            if (isStudio(title)) 
+            if (isStudio(title))
             {
-                delete [] title;
+                delete[] title;
                 return hwnd;
             }
         }
 
-        delete [] title;
+        delete[] title;
     }
 
     return NULL;
 }
 
-namespace winuser {
+namespace winuser
+{
     using v8::FunctionCallbackInfo;
     using v8::Integer;
-    using v8::String;
-    using v8::Object;
-    using v8::Value;
     using v8::Local;
+    using v8::Object;
+    using v8::String;
+    using v8::Value;
 
-    void showVSC(const FunctionCallbackInfo<Value>& args)
+    void showVSC(const FunctionCallbackInfo<Value> &args)
     {
         if (!vscWindow)
         {
@@ -92,7 +93,7 @@ namespace winuser {
             keybd_event(0x12, 0, 0x0001 | 0x0002, 0);
     }
 
-    void showStudio(const FunctionCallbackInfo<Value>& args)
+    void showStudio(const FunctionCallbackInfo<Value> &args)
     {
         if (!studioWindow)
         {
@@ -122,7 +123,7 @@ namespace winuser {
         }
     }
 
-    void isStudioRunning(const FunctionCallbackInfo<Value>& args)
+    void isStudioRunning(const FunctionCallbackInfo<Value> &args)
     {
         if (getWindow(""))
             args.GetReturnValue().Set(true);
@@ -130,7 +131,7 @@ namespace winuser {
             args.GetReturnValue().Set(false);
     }
 
-    void resetWindow(const FunctionCallbackInfo<Value>& args)
+    void resetWindow(const FunctionCallbackInfo<Value> &args)
     {
         studioWindow = NULL;
     }
@@ -146,4 +147,4 @@ namespace winuser {
     NODE_MODULE(NODE_GYP_MODULE_NAME, Initialize)
 }
 
-//node-gyp build --target=25.8.0 --arch=x64 --dist-url=https://electronjs.org/headers
+// node-gyp build --target=27.2.3 --arch=x64 --dist-url=https://electronjs.org/headers

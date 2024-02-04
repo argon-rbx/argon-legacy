@@ -1,6 +1,6 @@
 local config = {}
 
-config.argonVersion = '1.3.0'
+config.argonVersion = '1.3.1'
 
 config.host = 'localhost'
 config.port = '8000'
